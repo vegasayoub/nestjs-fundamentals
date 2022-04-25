@@ -1,4 +1,4 @@
-## ¿Qué es NestJS?
+## ¿Qué es NestJS?
 
 Demos un paso atrás y miremos al ecosistema de Node.js como un todo.
 
