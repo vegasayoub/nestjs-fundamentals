@@ -1,4 +1,4 @@
-## ¿Qué es NestJS?
+# ¿Qué es NestJS?
 
 Demos un paso atrás y miremos al ecosistema de Node.js como un todo.
 
@@ -16,7 +16,7 @@ Con NestJS, puedes construir API's Rest, aplicaciones MVC, micro servicios, apli
 
 Con la ayuda del sistema de inyección de dependencias de NestJS. Tenemos la capacidad de intercambiar los mecanismos subyacentes sin esfuerzo.
 
-## Instalar NestJS
+# Instalar NestJS
 
 Instalar Nest JS
 
@@ -30,7 +30,7 @@ npm -i -g @nestjs/cli
 nest --version
 ```
 
-## Crear proyecto
+# Crear proyecto
 
 Crear proyecto nuevo
 
@@ -50,7 +50,7 @@ Lanzar proyecto, con recompilaciones en tiempo real:
 npm run start:dev
 ```
 
-## ¿Qué hay en nuestro proyecto?
+# ¿Qué hay en nuestro proyecto?
 
 El corazón de la aplicación está en la capeta `src`:
  * **main.ts**: Toda la aplicación Nest empieza con el fichero principal `main.ts`. Aquí podemos ver que nuestra aplicación Nest se crea utilizando la factoría `NestFactory`, concretamente su método `create` pasandole un `AppModule`. Con esto podemos escuchar y lanzar nuestra aplicación en el puerto que queramos `3000`. El módulo AppModule es el módulo raíz de nuestra aplicación que contiene todo lo que nuestra aoplicación necesita ejecutar. Este módulo raíz puede contener otros módulos que son funcionalidades en sí mismos.
@@ -60,6 +60,4 @@ El corazón de la aplicación está en la capeta `src`:
  * **app.controller.ts**: Como el módulo, un controlador de Nest es una simple clase con un decorador `@Controller()`. Los controladores son peticiones especificas de las que se encarga nuestra aplicación. Este controlador utiliza el proveedor AppService para separar la lógica de negocio del mismo controlador. Nuestra aplicación de inicio utiliza una petición `Get`, este petición utiliza el método del appService.
  
  * **app.service.ts**: Hace la funcionalidad que hemos visto al lanzar la aplicación, aquí es donde está la implementación del método que se termina llamando.
-
-
 
